@@ -28,6 +28,9 @@
 					},{
 						title: 'button 按钮',
 						path: '/button'
+					},{
+						title: 'Tabs 切换',
+						path: '/tabs'
 					}]
 				}, {
 					title: 'form',
@@ -56,13 +59,13 @@
 					icon:'el-icon-location',
 					sub: [{
 						title:'请假单',
-						path:'/score'
+						path:'/leave'
 					},{
 						title:'missing 请假条',
 						path:'/missing'
 					},{
-						title:'leave -请假条',
-						path:'/leave'
+						title:'待处理',
+						path:'/leaves'
 					}]
 				}]
 			};

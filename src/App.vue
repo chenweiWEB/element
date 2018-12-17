@@ -6,6 +6,7 @@
   <el-container>
     <el-header>
     	<admin-header></admin-header>
+    	<admin-tabs></admin-tabs>
     </el-header>
     <el-main>
     	<router-view />
@@ -20,6 +21,7 @@
 <script>
 	import AdminAside from "@/components/Aside.vue"
 	import AdminHeader from "@/components/Header.vue"
+	import AdminTabs from "@/components/Tabs.vue"
 	export default {
 		data(){
 			return{};
@@ -27,7 +29,8 @@
 		methods:{},
 		components:{
 			AdminAside,
-			AdminHeader
+			AdminHeader,
+			AdminTabs
 		},
 	
 	};
@@ -45,8 +48,11 @@
 	
 	.el-header{
 		background-color: #FFFFFF;
+		height: 100px !important;
 	}
-	
+	.el-header .el-row{
+		margin-bottom: 0px;
+	}
 	.el-aside{
 		background-color: #20222A;
 	}

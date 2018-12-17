@@ -7,9 +7,10 @@ import Cacsder from './views/Cacsder.vue'
 import Switch from './views/Switch.vue'
 import Number from './views/Number.vue'
 import Select from './views/Select.vue'
-import Score from './views/Score.vue'
+import Leaves from './views/Leaves.vue'
 import Missing from './views/Missing.vue'
 import Leave from './views/Leave.vue'
+import Tabs from './components/Tabs.vue'
 
 Vue.use(Router)
 
@@ -47,9 +48,9 @@ export default new Router({
       name: 'select',
       component: Select
     },{
-      path: '/score',
-      name: 'score',
-      component: Score
+      path: '/leaves',
+      name: 'leaves',
+      component: Leaves
     },{
       path: '/missing',
       name: 'missing',
@@ -58,6 +59,10 @@ export default new Router({
       path: '/leave',
       name: 'leave',
       component: Leave
+    },{
+      path: '/tabs',
+      name: 'tabs',
+      component:Tabs
     }
   ]
 })

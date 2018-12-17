@@ -24,6 +24,7 @@
 				</el-menu-item>
 			</el-menu>
 		</el-col>
+		
 	</el-row>
 </template>
 
@@ -54,6 +55,9 @@
 				this.$router.push(val.path);
 			},
 			
+		},
+		coumputed(){
+			tabs
 		},
 		mounted() {
 			this.listname = this.$router.options.routes;
